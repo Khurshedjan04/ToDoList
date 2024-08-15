@@ -27,7 +27,7 @@
   height: 78px;
   position: relative;
   top: 120px;
-  left: 150px;
+  left: 10.5%;
   border-radius: 0px !important ;
   z-index: 10;
 }
@@ -102,7 +102,7 @@
   transition: all linear 0.2s;
 }
 .todo {
-  width: 500px;
+  width: 91.5%;
   height: 160px;
   position: absolute;
   top: 12px;
@@ -123,12 +123,12 @@
   position: absolute;
   bottom: 70px;
   left: 0px;
-  width: 220px;
+  width: 40.3%;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.521);
 }
 .select1 {
-  width: 220px;
+  width: 40.3%;
   height: 30px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -158,9 +158,9 @@
   font-weight: 600;
 }
 .save {
-  width: 250px;
+  width: 40.75%;
   height: 90px;
-  margin-right: 50px;
+  margin-right: 9.1%;
 
   border: 1px solid rgb(131, 126, 118);
   background-color: #ffffff;
@@ -172,7 +172,7 @@
   transition: 0.2s ease-in-out;
 }
 .save_mini {
-  width: 250px;
+  width: 40.75%;
   height: 50px;
   font-size: 14px;
   margin-right: 50px;
@@ -186,7 +186,7 @@
 }
 .clear {
   opacity: 0;
-  width: 250px;
+  width: 40.75%;
   height: 0px;
   font-size: 0px;
   margin-right: 50px;
@@ -201,7 +201,7 @@
 }
 .clear_active {
   opacity: 1;
-  width: 250px;
+  width: 40.75%;
   height: 30px;
   font-size: 13px;
 }
@@ -384,4 +384,99 @@ img {
 .done_last {
   pointer-events: none;
   background-color: darkgrey;
+}
+@media (max-width: 1200px) {
+  .forselect {
+    display: none;
+  }
+  .clear_local_storage_active {
+    right: 12% !important;
+  }
+  .clear_local_storage_active:hover {
+    right:12% !important;
+  }
+}
+@media (max-width: 1260px) {
+.roll {
+  flex-direction: column;
+  align-items: start;
+  padding-top: 5px;
+}
+}
+@media (max-width: 768px) {
+  .underline {
+    display: none;
+  }
+  .select2 {
+    width: 90% !important;
+  }
+  .todo {
+    height: 100px;
+      padding: 8px 20px 100px 20px;
+  }
+  .forinput {
+    bottom: 160px;
+    font-weight: 400;
+  }
+  .deadline {
+    bottom: 130px;
+    width: 91.5%;
+  }
+  .select1 {
+    bottom: 92px;
+    width: 91.5%;
+  }
+  .save {
+    bottom: 10px;
+    width: 91.5%;
+    height: 70px;
+    margin-right: 9.28%;
+  }
+  .save_mini {
+    bottom: 52px;
+    width: 91.5%;
+    height: 30px;
+    margin-right: 9.28%;
+  }
+  .clear {
+    opacity: 0;
+    width: 91.5%;
+    height: 0px;
+    margin-right: 9.28;
+    margin-right: 9.28%;
+    bottom: 10px;
+  }
+  .clear_active {
+    opacity: 1;
+    width: 91.5%;
+    margin-right: 9.28%;
+    height: 30px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 580px) {
+.right .avatar {
+  display: none;
+}
+.active_user {
+  transform: translate(-5px, -2px) !important;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  background-color: rgba(35, 56, 56, 0.603) !important;
+}
+.active_user:hover {
+  transform: translate(-5px, -2px) !important;
+}
+}
+@media (max-width: 480px) {
+.board_main {
+  flex-direction: column;
+}
+.box {
+  width: 100%;
+  max-height: 300px;
+  overflow: scroll;
+  min-height: 100px !important;
+  border-right: none;
+  border-bottom:1px solid rgb(131, 126, 118) ;
+}
 }
